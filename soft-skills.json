@@ -1,0 +1,45 @@
+{
+    "ua": [{
+            "text": "Організованість, Відповідальність, Пунктуальність",
+            "desc": "Люблю робити все вчасно і не спізнюватися. Навчився цьому на минулій роботі",
+            "img": "./img/icons/organize.png"
+        },
+        {
+            "text": "Комунікабельність, Стресостійкість, Робота в команді",
+            "desc": "На телебаченні, де я працював раніше. Завжди доводилося спілкувати з людьми з випускової команда. Весь цикл випуску новин - трудомісткий та людиноресурсно-витратний процес",
+            "img": "./img/icons/team.png"
+        },
+        {
+            "text": "Креативність, Творчість",
+            "desc": "Грав у різних андеграунд гуртах(2009-2016). Деякий час я працював графічним дизайнером(Photoshop, Corel Draw). Займаюсь відеомонтажем для себе та друзів (Vegas Pro, Premiere Pro, Final Cut)",
+            "img": "./img/icons/creative.png"
+        },
+        {
+            "text": "Саморозвиток, Уважність до деталей, Наполегливість",
+            "desc": "Грав у різних андеграунд гуртах(2009-2016). Деякий час я працював графічним дизайнером(Photoshop, Corel Draw). Займаюсь відеомонтажем для себе та друзів (Vegas Pro, Premiere Pro, Final Cut)",
+            "img": "./img/icons/detail.png"
+        }
+    ],
+    "en": [{
+            "text": "Orderly, Responsibility, Punctuality",
+            "desc": "I like to do everything on time and not be late. I had it from my last job",
+            "img": "./img/icons/organize.png"
+        },
+        {
+            "text": "Communication, Stress resistance, Teamwork",
+            "desc": "In television where I worked. Always had to talk to people on your release team. The whole process of live streaming takes a lot of time and intensive use of human resources.",
+            "img": "./img/icons/team.png"
+        },
+        {
+            "text": "Creativity, Imagination",
+            "desc": "Love music, played in various underground bands (2009-2016). For a while I worked as a graphic designer (Photoshop, Corel Draw). I edit video for yourself and friends (Vegas Pro, Premiere Pro, Final Cut)",
+            "img": "./img/icons/creative.png"
+        },
+        {
+            "text": "Self-development, Attention to detail, Persistence",
+            "desc": "Always in my free time from work and leisure I try to learn something new or refresh the old “baggage of knowledge”",
+            "img": "./img/icons/detail.png"
+        }
+    ],
+    "tech-skills": "HTML5, CSS3, SCSS/SASS. javascript, vue.js. WordPress, Joomla. GIT, Gulp, Webpack. Photoshop, Figma."
+}

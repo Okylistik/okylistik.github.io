@@ -1,0 +1,438 @@
+/* source-serif-pro-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/source-serif-pro-v15-latin_cyrillic-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/source-serif-pro-v15-latin_cyrillic-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* source-serif-pro-italic - latin_cyrillic */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/source-serif-pro-v15-latin_cyrillic-italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/source-serif-pro-v15-latin_cyrillic-italic.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* source-serif-pro-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../fonts/source-serif-pro-v15-latin_cyrillic-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/source-serif-pro-v15-latin_cyrillic-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+//color
+$color_main:#3A5F56;
+$color_desc: rgb(122, 122, 122);
+$color_text: rgb(117, 117, 117);
+$color_second: rgb(68, 92, 68);
+
+//size
+$mage_title: 60px;
+$title2: 48px;
+$title: 32px;
+$title3: 28px;
+$text: 20px;
+$desc: 16px;
+$desc2: 14px;
+
+//bg color
+$bg_box: #F4F3F0;
+$bg_main: rgb(242, 248, 243);
+$bg_second:rgba(255, 191, 0, 0.487);
+
+body {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-size: $text;
+}
+
+a:hover {
+  font-size: 18px;
+  color: rgb(68, 92, 68);
+  transition: font-size 0.5s;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 90%;
+  border: 3px solid black;
+  margin: 0 auto;
+  background: $bg_main;
+}
+
+.container {
+  padding: 0 110px;
+}
+
+// HEADER START
+
+block-job {
+  width: 45%;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+
+  & .active {
+
+    & img {
+      height: 50px;
+      transition: height 0.5s ease;
+    }
+  }
+
+  .lang {
+    padding-left: 10px;
+    font-size: $text;
+    color: $color_main;
+  }
+
+  & img {
+    padding: 0;
+    height: 30px;
+    transition: height 0.5s ease;
+  }
+}
+
+span {
+  font-weight: 700;
+  font-size: $text;
+}
+
+.bg {
+  background: $bg_main;
+}
+
+.header-bottom__block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.flag img {
+  float: center;
+  height: 20px;
+}
+
+.contact-title {
+  padding-top: 10px;
+}
+
+.block {
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 55%;
+    padding-right: 30px;
+  }
+
+  &__right {
+    width: 45%;
+
+    & img {
+      width: 100%;
+      border-radius: $text;
+    }
+  }
+
+  &__dates {
+    font-size: $desc;
+    padding-top: 5px;
+    color: $color_desc;
+    font-style: oblique;
+  }
+
+  &__name {
+    font-size: $mage_title;
+    color: $color_main;
+    padding-top: 15px;
+
+    &__vacancy {
+      color: $color_text;
+      font-size: $text;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__form {}
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: $title;
+    line-height: 120%;
+    color: $color_main;
+    width: 85%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    line-height: 2rem;
+
+    &-second {
+      font-weight: bold;
+      font-size: $text;
+      color: $color_second;
+      padding: 5px 0;
+    }
+  }
+
+  &__contacts {
+    font-style: normal;
+    font-weight: 700;
+    font-size: $desc;
+    line-height: $text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-link {
+      padding-left: 7px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: $desc;
+      line-height: $text;
+      color: $color_desc;
+    }
+
+    & img {
+      max-height: 25px;
+    }
+  }
+}
+
+//JOBS
+.block-job {
+  width: 45%;
+  background-color: white;
+  box-shadow: 10px 5px 5px $color_text;
+  margin: 15px;
+  padding: 30px;
+  border-radius: 14px;
+  transition: background-color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: #007e1b3b;
+    transition: background-color 1s ease-in-out;
+  }
+
+  &__title {
+    font-size: $title2;
+  }
+
+  &__text {
+    font-size: $text;
+  }
+}
+
+.jobs {
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.job-logo img {
+  float: right;
+  height: 80px;
+}
+
+.btitle {
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: $title2;
+    line-height: 120%;
+    color: $color_main;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: $text;
+    color: $color_second;
+    line-height: 30px;
+    margin: 10px auto;
+    text-align: center;
+    width: 60%;
+  }
+}
+
+// skills SOFT
+.skills__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.soft-skills {
+  width: 40%;
+  background-color: white;
+  box-shadow: 10px 5px 5px $color_text;
+  margin: 15px;
+  padding: 30px;
+  border-radius: 14px;
+  transition: transform 1s, background-color 2s ease;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  align-items: flex-start;
+  line-height: 40px;
+
+  &:hover {
+    transform: rotateY(180deg);
+    background-color: rgba(224, 224, 224, 0.164);
+    transition: transform 1s, background-color 2s ease-in-out;
+    // transition:  5s ease;
+    border: 1px solid black;
+  }
+
+  & img {
+    background-color: rgba(224, 224, 224, 0.164);
+    border-radius: $text;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    margin-bottom: 10px;
+    filter: invert(1);
+  }
+
+  &__title {
+    font-size: $title3;
+
+  }
+
+  &__text {
+    font-size: $text;
+    transform: rotateY(180deg);
+    display: none;
+    text-align: center;
+    text-shadow: 1px 1px 3px white;
+  }
+}
+
+// container_skills-and-languages
+.skills_languages {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+.container_tech {
+  width: 60%;
+}
+
+.container_lang {
+  width: 40%;
+}
+
+.tech-skills__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tech-skills {
+  background-color: white;
+  box-shadow: 10px 5px 5px $color_text;
+  margin: 15px;
+  padding: 30px;
+  border-radius: 14px;
+  transition: background-color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: #7e76003b;
+    transition: background-color 1s ease-in-out;
+  }
+
+  &__list {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &__title {
+    font-size: $title2;
+    padding-left: 100px;
+    text-align: right;
+  }
+}
+
+ul li {
+  list-style-type: circle;
+  padding-right: 30px;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.language {
+  background-color: white;
+  box-shadow: 10px 5px 5px $color_text;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  transition: background-color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: #7e76003b;
+    transition: background-color 1s ease-in-out;
+  }
+
+  &__text {
+    font-size: $desc;
+    line-height: 20px;
+    margin: 5px 20px;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-around;
+    padding: 0 10px;
+  }
+}
+
+// FOOTER 
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #3A5F56;
+}
