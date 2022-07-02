@@ -46,6 +46,7 @@ $title2: 48px;
 $title: 32px;
 $title3: 28px;
 $text: 20px;
+$text2: 18px;
 $desc: 16px;
 $desc2: 14px;
 
@@ -54,14 +55,22 @@ $bg_box: #F4F3F0;
 $bg_main: rgb(242, 248, 243);
 $bg_second:rgba(255, 191, 0, 0.487);
 
+html {
+  width: 100%;
+}
+
 body {
   font-family: 'Source Serif Pro';
   font-style: normal;
   font-size: $text;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  width: 100%;
 }
 
 a:hover {
-  font-size: 18px;
+  font-size: $text2;
   color: rgb(68, 92, 68);
   transition: font-size 0.5s;
 }
@@ -69,19 +78,22 @@ a:hover {
 .wrapper {
   max-width: 1440px;
   width: 90%;
-  border: 3px solid black;
   margin: 0 auto;
   background: $bg_main;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .container {
   padding: 0 110px;
+  display: flex;
 }
 
 // HEADER START
 
 block-job {
-  width: 45%;
+  flex-basis: 50%;
 }
 
 .languages {
@@ -89,6 +101,7 @@ block-job {
   flex-direction: column;
   align-items: center;
   position: fixed;
+  padding-top: 5px;
 
   & .active {
 
@@ -142,15 +155,18 @@ span {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 55%;
+    flex-basis: 50%;
     padding-right: 30px;
   }
 
   &__right {
-    width: 45%;
+    flex-basis: 50%;
+    min-width: 400px;
 
     & img {
+      height: auto;
       width: 100%;
+      display: block;
       border-radius: $text;
     }
   }
@@ -217,14 +233,16 @@ span {
     }
 
     & img {
-      max-height: 25px;
+      max-width: 25px;
+      float: left;
+      padding-bottom: 5px;
     }
   }
 }
 
 //JOBS
 .block-job {
-  width: 45%;
+  flex-basis: 45%;
   background-color: white;
   box-shadow: 10px 5px 5px $color_text;
   margin: 15px;
@@ -279,7 +297,7 @@ span {
     line-height: 30px;
     margin: 10px auto;
     text-align: center;
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -292,7 +310,6 @@ span {
 }
 
 .soft-skills {
-  width: 40%;
   background-color: white;
   box-shadow: 10px 5px 5px $color_text;
   margin: 15px;
@@ -303,6 +320,7 @@ span {
   justify-content: space-between;
   text-align: right;
   align-items: flex-start;
+  flex-basis: 45%;
   line-height: 40px;
 
   &:hover {
@@ -342,16 +360,20 @@ span {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .container_tech {
-  width: 60%;
+  flex-basis: 60%;
 }
 
 .container_lang {
-  width: 40%;
+  flex-basis: 40%;
+
 }
+
 
 .tech-skills__container {
   display: flex;
@@ -378,7 +400,7 @@ span {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10px;
-    font-size: 22px;
+    font-size: $text;
     font-weight: 700;
   }
 
@@ -435,4 +457,163 @@ ul li {
   padding: 20px;
   text-align: center;
   color: #3A5F56;
+}
+
+.right {
+  display: none;
+}
+
+.left {
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+// BreakPoints
+
+@media (max-width: 1281px) {
+  .right {
+    display: flex;
+  }
+
+  .left {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 1151px) {
+
+  .wrapper {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1051px) {
+  .mobile {
+    display: flex;
+  }
+
+  .note {
+    display: none;
+  }
+
+  .block {
+    &__left {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      padding-right: 30px;
+    }
+
+    &__right {
+      flex-basis: 100%;
+      padding-top: 30px;
+    }
+  }
+
+  .bio-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bio-column {
+    flex-basis: 50%;
+  }
+
+  .left {
+    display: flex;
+    padding-left: 50px;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .btitle__text {
+    width: 90%;
+  }
+
+  .container_tech {
+    flex-basis: 55%;
+  }
+  
+  .container_lang {
+    flex-basis: 45%;
+  
+  }
+}
+
+@media (max-width:971px) {
+  .soft-skills {
+    flex-basis: 80%;
+  }
+.skills_languages{
+  justify-content: center;
+}
+.tech-skills__list, .language__list{
+  flex-direction: column;
+}
+  .container_tech {
+    flex-basis: 80%;
+  }
+  
+  .container_lang {
+    flex-basis: 80%;
+  }
+}
+
+@media (max-width: 881px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .languages {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+
+  }
+
+  .jobs__container {
+    justify-content: center;
+  }
+
+  .block-job, .soft-skills {
+    flex-basis: 80%;
+    border: 1px solid black;
+  }
+
+
+  .language, .tech-skills{
+    border: 1px solid black;
+  }
+}
+
+@media (max-width: 761px) {
+  .bio-columns {
+    flex-direction: column;
+  }
+
+  .left {
+    padding-left: 0;
+  }
+
+  .wrapper {
+    background: none;
+  }
+}
+
+@media (max-width: 601px) {
+  .block-job, .soft-skills {
+    flex-basis: 100%;
+  }
+
+  
 }
