@@ -159,7 +159,6 @@ async function getSkills(lang = 'en') {
                 items.children[2].style.display = "block"
             }, 300)
 
-            console.log(items.children);
         })
         items.addEventListener('mouseout', (e) => {
             setTimeout(() => {
