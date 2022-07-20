@@ -2,10 +2,10 @@ let languages = {
     ua: {
         header: {
             bio: {
-                vacancy: "Front-End developer, HTML coder",
+                vacancy: "Front-End developer, Web developer",
                 name: "Антон Григор'єв",
                 date: "Дата народження: 07.11.1989",
-                text: "Я початківець в front-end розробці. Вирішив змінити сферу діяльності й повернутися до того, чим раніше займався – розробка веб-сайтів. Але є сильне бажання вдосконалювати свої професійні й особисті якості, та знайти роботу в IT-сфері. Мій підхід – це старанність і опановування чогось нового. Люблю гуляти із собакою, люблю ліс, природу. Також люблю подорожувати із сім'єю. Не їм м'яса з 18 років з етичних міркувань. Зараз у вільний час я дивлюся уроки та вивчаю програмування.",
+                text: "Я початківець в front-end розробці. Вирішив змінити сферу діяльності й повернутися до того, чим раніше займався – розробка веб-сайтів. В ліцеї вивчав Visual Basic та ходив на курси по С++. Є сильне бажання вдосконалювати свої професійні й особисті якості, та знайти роботу в IT-сфері. Мій підхід – це старанність і опановування чогось нового. Зараз у вільний час я дивлюся уроки та вивчаю програмування.",
             },
             education: {
                 title: "Навчання",
@@ -18,8 +18,8 @@ let languages = {
             }
         },
         language: {
-            "Українска мова": "Вільно спілкуюся, рідна мова",
-            "Російська мова": "Вільно спілкуюся",
+            "Українска мова": "Вільно спілкуюсь. Рідна мова",
+            "Російська мова": "Вільно спілкуюсь",
             "Англійська мова": "Середній рівень. Розумію співрозмовника. Можу розмовляти, використовуючи прості речення"
         },
         title: [
@@ -29,10 +29,10 @@ let languages = {
     en: {
         header: {
             bio: {
-                vacancy: "Front-End developer, HTML coder",
+                vacancy: "Front-End developer, Web developer",
                 name: "Anton Hryhoryev",
                 date: "Date of birth: November 7, 1989",
-                text: "Beginner front-end developer. I decided to change my field of activity and return to what I used to do - website development. There is a desire to find a suitable job and improve. My approach is diligence and the ability to learn new things. I like to walk with the dog, I love the forest, nature. I don’t eat meat. I renounced at the age of 18 for ethical reasons. Now in my free time I watch lessons and improve my programming skills.",
+                text: "Beginner front-end developer. I decided to change my field of activity and return to what I used to do - website development. At the lyceum, he studied Visual Basic and attended C++ courses. There is a desire to find a suitable job and improve. My approach is diligence and the ability to learn new things. I like to walk with the dog, I love the forest, nature. I don’t eat meat. I renounced at the age of 18 for ethical reasons. Now in my free time I watch lessons and improve my programming skills.",
             },
             education: {
                 title: "Education",

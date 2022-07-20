@@ -2,30 +2,30 @@
     "ua": [{
             "title": "Режисер новин",
             "place": "Телеканал 'Прямий'",
-            "dates": "Серпень 2017 - Квітень 2022 | Україна(Київ)",
+            "dates": "Серпень 2017 - Квітень 2022 (4 роки, 9 місяців) | Україна(Київ)",
             "text": "Ведення та випуск новин в прямому ефірі. Вміння якісно керувати випускови колективом та виробничим процесом. двокамерний видеомонтаж в прямому ефірі. Участь у підготовчому процесі. Ряд адміністративних обов'язків. Підготовка, аналіз, доопрацюваня відеоматеріалу для видачі його в новинах.",
             "logo": "img/pryamiy.png"
         },
         {
             "title": "Менеджер з обслуговування сайтів",
             "place": "Студія дизайну 2UP",
-            "dates": "Червень 2012 - Червень 2016 | Україна(Київ)",
-            "text": "Створення сайтів на чистому html, а також в CRM-системах (wordpress, joomla). Підключення сайту до домену. Надання послуг як контент-менеджер, очищення сайту від сміття, SEO-оптимізація.",
+            "dates": "Червень 2012 - Червень 2016 (4 роки) | Україна(Київ)",
+            "text": "Створення сайтів на чистому html, а також в системах wordpress та joomla. Підключення сайту до домену. Надання послуг як контент-менеджер, очищення сайту від сміття, SEO-оптимізація.",
             "logo": "img/2up.png"
         }
     ],
     "en": [{
             "title": "News TV director",
             "place": "TV Channel 'Pryamiy'",
-            "dates": "August 2017 - April 2022 | Ukraine(Kyiv)",
+            "dates": "August 2017 - April 2022 (4 years and 9 months) | Ukraine(Kyiv)",
             "text": "Conducting and issuing news on the air. Ability to qualitatively manage the production team, two-chamber editing, participation in the staging process. A number of administrative duties. Analysis of the video material to be broadcast and its revision.",
             "logo": "img/pryamiy.png"
         },
         {
             "title": "Website Service Manager",
             "place": "Web-studio 2UP",
-            "dates": "June 2012 - June 2016 | Ukraine(Kyiv)",
-            "text": "Creation of sites on pure html, as well as in CRM systems (wordpress, joomla). Connecting a site to a domain. Provided services of a content manager, site cleaning from garbage, SEO optimization.",
+            "dates": "June 2012 - June 2016 (4 years) | Ukraine(Kyiv)",
+            "text": "Creation of sites on pure html, as well as in wordpress and joomla systems. Connecting a site to a domain. Provided services of a content manager, site cleaning from garbage, SEO optimization.",
             "logo": "img/2up.png"
         }
     ]
