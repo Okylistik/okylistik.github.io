@@ -55,7 +55,7 @@ a:hover {
 
 .wrapper {
   max-width: 1440px;
-  width: 90%;
+  width: 90% ;
   margin: 0 auto;
   background: #00a2ff34;
   display: -webkit-box;
