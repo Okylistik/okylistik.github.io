@@ -41,5 +41,5 @@
             "img": "./img/icons/detail.png"
         }
     ],
-    "tech-skills": "HTML5, CSS3, SCSS/SASS. javascript(ES6), Node.js. MySQL, Excel, Google Sheets. WordPress, Joomla. GIT, Gulp, Webpack. Photoshop, Figma, CorelDraw"
+    "tech-skills": "HTML5, CSS3, SCSS/SASS. javascript(ES6), Node.js(npm). MySQL, Excel, Google Sheets. WordPress, Joomla. GIT, Gulp, Webpack. Photoshop, Figma, CorelDraw"
 }

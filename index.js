@@ -151,16 +151,17 @@ async function getSkills(lang = 'en') {
     const softSkills = document.querySelectorAll('.soft-skills')
 
     softSkills.forEach((items) => {
-        items.addEventListener('mouseover', (e) => {
-            console.log(items);
-            setTimeout(() => {
+        items.addEventListener('mouseenter', (e) => {
+            e.preventDefault
+                        console.log(e.target);
+                        setTimeout(() => {
                 items.children[0].style.display = "none"
                 items.children[1].style.display = "none"
                 items.children[2].style.display = "block"
             }, 300)
-
         })
-        items.addEventListener('mouseout', (e) => {
+        items.addEventListener('mouseleave', (e) => {
+            e.stopPropagation()
             setTimeout(() => {
                 items.children[0].style.display = "block"
                 items.children[1].style.display = "block"
